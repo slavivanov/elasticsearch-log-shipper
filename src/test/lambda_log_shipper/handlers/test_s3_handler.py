@@ -23,7 +23,7 @@ def test_generate_key_name(record):
 
     key = S3Handler.generate_key_name([r1, r2])
 
-    assert key.startswith("logs/2020/5/22/10/func/20:30:0-")
+    assert key.startswith("logs/2020/5/22/10:20:30:0-")
 
 
 def test_format_records(record):
