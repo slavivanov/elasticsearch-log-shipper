@@ -6,9 +6,6 @@ from lambda_log_shipper.configuration import Configuration
 
 
 def test_send_batch_some_failures(caplog, record):
-    class TestHandler(LogsHandler):
-        def handle_logs(self, records):
-            1 / 0
 
     manager = LogsManager()
     manager.pending_logs.append(record)

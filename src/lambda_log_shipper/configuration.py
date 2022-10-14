@@ -28,4 +28,4 @@ class Configuration:
     )
 
     # Destination S3 bucket to write the logs. Default None to not publish to S3.
-    s3_bucket_arn: Optional[str] = parse_env("LUMIGO_EXTENSION_LOG_S3_BUCKET", None)
+    s3_bucket_arn: Optional[str] = parse_env("LOGS_S3_BUCKET", None)
